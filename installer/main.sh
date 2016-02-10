@@ -570,6 +570,7 @@ fi
 # Unpack the tarball if appropriate
 if [ -z "$RESTOREBIN$RESTORE$UPDATE$DOWNLOADONLY" ]; then
     echo "Installing $RELEASE-$ARCH chroot to $CHROOTSRC" 1>&2
+    echo "TARBALL=$TARBALL"
     if [ -n "$TARBALL" ]; then
         # Unpack the chroot
         echo 'Unpacking chroot environment...' 1>&2
